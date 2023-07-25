@@ -20,17 +20,72 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-header li {
   list-style-type: none;
-  margin: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-todoList {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0px;
+}
+
+.App-listItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+
+.App-listItem button {
+  padding: 4px 12px;
+  margin-left: 12px;
+  border: 0px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.App-listItem input {
+  padding: 4px 12px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.create {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.create button {
+  padding: 4px 12px;
+  margin: 0 auto;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.create input {
+  padding: 4px 12px;
+  height: 38px;
+  margin: 0 auto;
+  border: 0px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.create input:focus {
+  outline: 3px solid purple;
 }
 
 @keyframes App-logo-spin {

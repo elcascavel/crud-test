@@ -12,19 +12,20 @@ const CreateTodoItem = ({ createTodo }) => {
   };
 
   return (
-    <div className="create">
-      <h2>Create Todo Item</h2>
-      <form>
-        <label htmlFor="todo">Todo</label>
-        <input
-          type="text"
-          name="todo"
-          id="todo"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+    <div>
+      <form className="create">
+        <div>
+          <input
+            type="text"
+            name="todo"
+            id="todo"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Create a new todo..."
+          />
+        </div>
         <button onClick={handleCreateTodo} type="submit">
-          Create
+          +
         </button>
       </form>
     </div>

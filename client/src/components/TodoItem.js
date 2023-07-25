@@ -13,14 +13,16 @@ const TodoItem = ({ todo, onUpdateTodo, onDeleteTodo }) => {
   };
 
   return (
-    <li>
-      <input
-        type="checkbox"
-        defaultChecked={todo.completed}
-        onChange={handleUpdate}
-      />
-      <span>{todo.title}</span>
-      <button onClick={handleDelete}>Delete</button>
+    <li className="App-listItem">
+      <div>
+        <input
+          type="checkbox"
+          defaultChecked={todo.completed}
+          onChange={handleUpdate}
+        />
+        <span>{todo.title}</span>
+      </div>
+      <button onClick={handleDelete}>X</button>
     </li>
   );
 };
