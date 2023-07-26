@@ -1,6 +1,6 @@
 0. Create server folder.
 1. Initialize a new Node.js project `npm init -y`
-2. Install required packages: `express sqlite3`
+2. Install required packages: `express sqlite3 knex cors`
 3. Install `nodemon -D` (-D is dev dependency)
 
 - Use sqlite because it's an embedded db (no need to worry about hosting it externally). Useful to create a db on the spot. Other situations MySQL or PostgreSQL or for noSQL use Mongo.
